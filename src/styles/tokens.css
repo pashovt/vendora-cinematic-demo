@@ -1,0 +1,96 @@
+/*
+ * Design tokens. Edit colours, type, spacing and motion timings here.
+ * Components only reference these custom properties.
+ */
+:root {
+  /* Palette */
+  --c-ink-950: #0d0e0c;
+  --c-ink-900: #121311;
+  --c-ink-850: #171815;
+  --c-ink-800: #1c1d1a;
+  --c-ink-700: #272924;
+  --c-warm-50: #f3efe4;
+  --c-warm-200: #d9d4c6;
+  --c-warm-400: #b4b0a5;
+  --c-warm-500: #8f8c82;
+  --c-paper: #e7e3d8;
+  --c-paper-2: #dcd7ca;
+  --c-lime: #c6f432;
+  --c-lime-strong: #d4ff4a;
+  --c-lime-ink: #10120a;
+  --c-error: #ff9a8a;
+  --c-error-light: #a32a1a;
+
+  /* Semantic (dark theme default) */
+  --bg: var(--c-ink-900);
+  --bg-raised: var(--c-ink-850);
+  --bg-inset: var(--c-ink-950);
+  --fg: var(--c-warm-50);
+  --fg-muted: var(--c-warm-400);
+  --fg-subtle: var(--c-warm-500);
+  --line: rgb(243 239 228 / 0.12);
+  --line-strong: rgb(243 239 228 / 0.26);
+  --accent: var(--c-lime);
+  --accent-ink: var(--c-lime-ink);
+  --focus: var(--c-lime);
+  --error: var(--c-error);
+
+  /* Typography */
+  --font-sans: 'Inter Tight Variable', 'Inter Tight', ui-sans-serif, system-ui, -apple-system,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --fs-body: 1.0625rem; /* 17px */
+  --fs-label: 0.75rem; /* mono labels */
+  --fs-small: 0.9375rem; /* 15px, used sparingly for meta text */
+  --fs-lead: clamp(1.125rem, 1rem + 0.45vw, 1.375rem);
+  --fs-h1: clamp(2.875rem, 0.6rem + 7.2vw, 8.5rem);
+  --fs-h2: clamp(2.25rem, 1rem + 4.6vw, 5.5rem);
+  --fs-manifesto: clamp(1.75rem, 0.9rem + 2.9vw, 3.5rem);
+  --fs-h3: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --fs-display: clamp(1.75rem, 1.2rem + 2.2vw, 3.25rem);
+  --lh-tight: 0.94;
+  --lh-snug: 1.15;
+  --lh-body: 1.6;
+  --tracking-tight: -0.045em;
+  --tracking-display: -0.055em;
+  --tracking-eyebrow: 0.14em;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-section: clamp(5rem, 3rem + 7vw, 10rem);
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 3rem);
+  --container: 1320px;
+  --header-h: 72px;
+  --radius: 4px;
+  --radius-lg: 12px;
+
+  /* Motion */
+  --dur-fast: 160ms;
+  --dur-base: 260ms;
+  --dur-slow: 900ms;
+  --dur-hero: 1100ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Lighter practical section. */
+.theme-light {
+  --bg: var(--c-paper);
+  --bg-raised: var(--c-paper-2);
+  --bg-inset: #f6f3ea;
+  --fg: #141512;
+  --fg-muted: #4a4943;
+  --fg-subtle: #58564f;
+  --line: rgb(20 21 18 / 0.14);
+  --line-strong: rgb(20 21 18 / 0.34);
+  --focus: #161714;
+  --error: var(--c-error-light);
+}
